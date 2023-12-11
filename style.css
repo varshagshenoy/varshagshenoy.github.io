@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: arial;
+}
+
+body{
+    background-color:  #e3e6e6;
+}
+
+#nav-bar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nav-logo{
+    height: 50px;
+    width: 110px;
+    margin: 1px;
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    /* position: absolute;
+    left: 6px; */
+}
+
+.border{
+    border: 1px solid transparent;
+}
+
+.border:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/*location section*/
+
+.nav-location{
+    height: 50px;
+    padding: 0px 9px 0px 9px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-location-left{
+    margin-top: 11px;
+    margin-right: 3px;
+}
+
+.nav-location-right-upper{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.nav-location-right-lower{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+/*search section*/
+
+.nav-search{
+    width: 890px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.search-input input{
+    width: 790px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.category-list select{
+    height: 40px;
+    width: 50px;
+    background-color: #f3f3f3;
+    border: none;
+    font-size: 12px;
+    color: #555;
+    padding-left: 5px;
+    /* border-left: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3; */
+    border-right: 1px solid #cdcdcd;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.category-list select:hover{
+    background-color: #dadada;
+    cursor: pointer;
+    color: rgb(15, 17, 17);
+}
+
+.search-button{
+    height: 40px;
+    width: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd69;
+    color: #0f1111;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.search-button:hover{
+    background-color: #f3a847;
+    cursor: pointer;
+}
+
+
+/*language section*/
+
+.nav-language{
+    display: flex;
+    height: 50px;
+    width: 55px;
+    padding: 0px 6px 0px 6px;
+    /* margin-top: 10px; */
+    align-items: center;
+}
+
+.countryImage{
+    background-image: url(usa_flag.png);
+    height: 16px;
+    width: 21px;
+    background-size: cover;
+    margin-right: 1px;
+    margin-top: 10px;
+}
+
+.langName p{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2px;
+    margin-top: 12px;
+}
+
+.nav-language i{
+    color: #a7acb2;
+    font-size: 12px;
+    padding-top: 4px;
+    margin-top: 10px;
+}
+
+
+/*sign in and orders sections*/
+
+.nav-signin{
+    height: 50px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-signin-lower{
+    display: flex;
+}
+
+.nav-signin-lower i{
+    color: #a7acb2;
+    font-size: 12px;
+    padding-top: 3px;
+    margin-left: 5px;
+}
+
+.nav-orders{
+    padding-left: 9px;
+    padding-right: 9px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-right-upper{
+    font-size: 12px;
+}
+
+.nav-right-lower{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/*cart section*/
+.nav-cart{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.nav-cart i{
+    font-size: 25px;
+}
+
+.nav-cart p{
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 3px;
+    padding-top: 11px;
+}
+
+
+
+/*sub navbar*/
+
+.sub-navbar{
+    height: 39px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    font-size: 14px;
+}
+
+.sub-navbar a{
+    color: white;
+}
+
+.sub-navbar-left{
+    display: flex;
+    align-items: center;
+    padding: 8px 9px 8px 9px;
+}
+
+.sub-navbar-left a{
+    padding-left: 5px;
+}
+
+.sub-navbar-main{
+    display: flex;
+    align-items: center;
+}
+
+.sub-navbar-main a{
+    padding: 8px 9px 8px 9px;
+    /* margin-top: 5px;
+    margin-bottom: 6px; */
+}
+
+.sub-navbar-border{
+    border: 1px solid transparent;
+    padding: 11px 9px 11px 9px;
+}
+
+.sub-navbar-border:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 0;
+    padding: 11px 9px 11px 9px;
+}
+
+
+
+/*hero banner*/
+
+.hero-banner{
+    height: 320px;
+    background-image: url(main-bg.jpg);
+    background-size: cover;
+}
+
+/* .hero-banner::before{
+    content: "";
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    bottom: 600px;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, transparent, #e3e6e6 600px);
+    z-index: 1;
+} */
+
+.banner-message{
+    color: #0f1111;
+    font-size: 14px;
+    background-color: #f5f6f6;
+    position: absolute;
+    top: 350px;
+    width: 97%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.banner-msg-container{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-message a{
+    color: #007185;
+}
+
+
+/*page content*/
+
+.content-cards-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 10px 20px 10px;
+}
+
+.content-card{
+    background-color: white;
+    height: 400px;
+    /* height: 385px; */
+    /* padding: 20px 0px 15px; */
+    padding: 25px 20px 0px 20px;
+    margin-bottom: 20px;
+    width: 21%;
+}
+
+.content-card h2{
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.card-grid{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* padding: 10px 0px 0px 0px; */
+    margin-bottom: 20px;
+}
+
+.card-grid-box{
+    width: 46%;
+    height: 50%;
+}
+
+.card-grid-box p{
+    margin-top: 3px;
+}
+
+.card-grid-img{
+    background-position: 50%;
+    height: 116px;
+}
+
+.headset-img{background-image: url(Gaming_Headset.jpg);}
+.keyboard-img{background-image: url(Gaming_Keyboard.jpg);}
+.mice-img{background-image: url(Gaming_Mouse.jpg);}
+.chair-img{background-image: url(Gaming_Chair.jpg);}
+
+.card-image{
+    height: 300px;
+    background-size: cover;
+    background-position: 40%;
+    margin-bottom: 20px;
+}
+
+.img2{background-image: url(toys.jpg);}
+.img3{background-image: url(pcs.jpg);}
+.img4{background-image: url(beauty.jpg);}
+.img5{background-image: url(home_decor.jpg);}
+.img6{background-image: url(holidaygifts.jpg);}
+.img7{background-image: url(laptops.jpg);}
+
+.dresses-img{background-image: url(dresses.jpg);}
+.knits-img{background-image: url(knits.jpg);}
+.jackets-img{background-image: url(jackets.jpg);}
+.jewelry-img{background-image: url(jewelry.jpg);}
+
+.content-card a{
+    color: #007185;
+    font-size: 13px;
+}
+
+
+
+/* Footer */
+
+.back-to-top{
+    background-color: #37475a;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.footer-navigation-panel{
+    background-color: #232f3e;
+    height: 280px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 100px 0px 170px;
+}
+
+.footer-navigation-panel p{
+    padding-bottom: 15px;
+}
+
+.footer-navigation-panel a{
+    display: block;
+    font-size: 14px;
+    color: #ddd;
+    padding-bottom: 10px;
+}
+
+.footer-line-logo{
+    height: 80px;
+    border-top: 1px solid #3a4553;
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-section{
+    background-color: #131a22;
+    color: #ddd;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+}
+
+.copyright-section a{
+    color: #ddd;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.copyright-section p{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
